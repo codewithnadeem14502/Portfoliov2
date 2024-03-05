@@ -23,7 +23,7 @@ const Projects = () => {
         <ProjectCard
           key={index}
           containerClassName="my-container"
-          className="ml-5 w-full"
+          className=" w-full"
         >
           <CardBody
             className={`w-[350px] h-[350px] md:w-[750px] md:h-[350px] flex justify-center items-center text-center rounded-lg ${
