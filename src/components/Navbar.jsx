@@ -3,14 +3,10 @@ import { useState, useEffect } from "react";
 import { IoMoon } from "react-icons/io5";
 import { IoSunny } from "react-icons/io5";
 import { useTheme } from "../utils/ThemeContext";
+
 const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useTheme();
-  // const [isDarkMode, setIsDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState("");
-
-  // const toggleDarkMode = () => {
-  //   setIsDarkMode(!isDarkMode);
-  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +51,7 @@ const Navbar = () => {
           isDarkMode ? "gray-800" : "white"
         } md:w-[80%] rounded-none md:rounded-3xl lg:w-[50%]`}
       >
-        <div className="flex items-center justify-center ">
+        <div className="flex items-center justify-center">
           <div className="flex items-center">
             <motion.ul
               className={`w-full md:w-[80%] lg:w-[100%] p-3 ${
@@ -74,12 +70,8 @@ const Navbar = () => {
                       : isDarkMode
                       ? "white"
                       : "black"
-                  } p-3 rounded-2xl bg-${
-                    activeSection === "home"
-                      ? "slate-100"
-                      : isDarkMode
-                      ? "green-300"
-                      : ""
+                  } p-3 rounded-2xl ${
+                    activeSection === "home" ? "bg-slate-100" : ""
                   } text-lg md:text-xl`}
                 >
                   Home
@@ -94,18 +86,13 @@ const Navbar = () => {
                       : isDarkMode
                       ? "white"
                       : "black"
-                  } p-3 rounded-2xl bg-${
-                    activeSection === "about"
-                      ? "slate-100"
-                      : isDarkMode
-                      ? "green-300"
-                      : ""
+                  } p-3 rounded-2xl ${
+                    activeSection === "about" ? "bg-slate-100" : ""
                   } text-lg md:text-xl`}
                 >
                   About
                 </a>
               </li>
-
               <li>
                 <a
                   href="#experience"
@@ -115,15 +102,9 @@ const Navbar = () => {
                       : isDarkMode
                       ? "white"
                       : "black"
-                  } p-3 rounded-2xl bg-${
-                    activeSection === "experience"
-                      ? "slate-100"
-                      : isDarkMode
-                      ? "green-300"
-                      : ""
-                  } text-lg md:text-xl 
-               
-                  `}
+                  } p-3 rounded-2xl ${
+                    activeSection === "experience" ? "bg-slate-100" : ""
+                  } text-lg md:text-xl`}
                 >
                   Experience
                 </a>
@@ -137,12 +118,8 @@ const Navbar = () => {
                       : isDarkMode
                       ? "white"
                       : "black"
-                  } p-3 rounded-2xl bg-${
-                    activeSection === "skills"
-                      ? "slate-100"
-                      : isDarkMode
-                      ? "green-300"
-                      : ""
+                  } p-3 rounded-2xl ${
+                    activeSection === "skills" ? "bg-slate-100" : ""
                   } text-lg md:text-xl`}
                 >
                   Skills
@@ -157,12 +134,8 @@ const Navbar = () => {
                       : isDarkMode
                       ? "white"
                       : "black"
-                  } p-3 rounded-2xl bg-${
-                    activeSection === "projects"
-                      ? "slate-100"
-                      : isDarkMode
-                      ? "green-300"
-                      : ""
+                  } p-3 rounded-2xl ${
+                    activeSection === "projects" ? "bg-slate-100" : ""
                   } text-lg md:text-xl`}
                 >
                   Projects
@@ -177,12 +150,8 @@ const Navbar = () => {
                       : isDarkMode
                       ? "white"
                       : "black"
-                  } p-3 rounded-2xl bg-${
-                    activeSection === "contact"
-                      ? "slate-100"
-                      : isDarkMode
-                      ? "green-300"
-                      : ""
+                  } p-3 rounded-2xl ${
+                    activeSection === "contact" ? "bg-slate-100" : ""
                   } text-lg md:text-xl`}
                 >
                   Contact
