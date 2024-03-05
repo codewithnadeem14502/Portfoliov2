@@ -40,8 +40,8 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className={`pt-10 md:pt-16 px-5 ${
-        isDarkMode ? "bg-gray-800 text-white" : "bg-white text-black"
+      className={`pt-10 md:py-16 px-5 ${
+        isDarkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
       <motion.div
@@ -55,22 +55,26 @@ const Contact = () => {
           Please contact me directly at{" "}
           <a
             href="mailto:codewithnadeeem@gmail.com"
-            className="text-blue-500 hover:underline"
+            className="text-blue-500 mr-2 hover:underline"
           >
             codewithnadeeem@gmail.com
-          </a>{" "}
+          </a>
+          <a className="text-blue-500 mr-2 hover:underline">
+            {" "}
+            || +91 9398300727
+          </a>
           or through this form.
         </p>
         <form
           ref={form} // Assigning the form reference
-          className="flex flex-col items-start w-[90%] md:w-[40%]"
+          className="flex flex-col items-start w-[90%] md:w-[60%] lg:w-[40%]"
           onSubmit={sendEmail}
         >
           <input
             type="email"
             placeholder="Your Email"
             className={`w-full mb-4 p-5 border focus:outline-none rounded-lg ${
-              isDarkMode ? "border-gray-600" : "border-gray-400"
+              isDarkMode ? "border-gray-600 bg-slate-200" : "border-gray-400"
             }`}
             name="user_email"
             value={email}
@@ -79,8 +83,8 @@ const Contact = () => {
           />
           <textarea
             placeholder="Your Message"
-            className={`w-full h-60 mb-4 p-5 rounded-lg border focus:outline-none resize-none ${
-              isDarkMode ? "border-gray-600" : "border-gray-400"
+            className={`w-full h-60 mb-4 p-5  rounded-lg border focus:outline-none resize-none ${
+              isDarkMode ? "border-gray-600 bg-slate-200" : "border-gray-400 "
             }`}
             name="message"
             value={message}

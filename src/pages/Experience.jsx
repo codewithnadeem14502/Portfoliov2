@@ -19,12 +19,16 @@ const Experience = () => {
 
   return (
     <div
-      className={`pt-24 px-3 ${
-        isDarkMode ? "bg-gray-800 text-white" : "bg-white text-white"
+      className={`pt-10 md:pt-20  px-3 ${
+        isDarkMode ? "bg-gray-900 text-white" : "bg-white text-white"
       }`}
       id="experience"
     >
-      <h1 className="mb-16 text-center text-5xl font-semibold">
+      <h1
+        className={`mb-16 text-center text-5xl font-semibold ${
+          isDarkMode ? "text-white" : "text-black"
+        }`}
+      >
         {" "}
         My Experience
       </h1>

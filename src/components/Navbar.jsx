@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <motion.ul
               className={`w-full md:w-[80%] lg:w-[100%] p-3 ${
-                isDarkMode ? "bg-gray-800" : ""
+                isDarkMode ? "text-black" : "text-slate-500"
               } flex flex-wrap h-[150px] md:h-[60px] md:flex-nowrap justify-evenly md:justify-between md:rounded-3xl items-center text-center `}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -121,7 +121,9 @@ const Navbar = () => {
                       : isDarkMode
                       ? "green-300"
                       : ""
-                  } text-lg md:text-xl`}
+                  } text-lg md:text-xl 
+               
+                  `}
                 >
                   Experience
                 </a>

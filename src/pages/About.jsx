@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className={`w-full pt-20 ${isDarkMode ? "bg-gray-800" : "bg-white"}`}
+      className={`w-full pt-20 ${isDarkMode ? "bg-gray-900" : "bg-white"}`}
     >
       <div
         className={`flex flex-col justify-center text-center items-center w-full mx-auto px-5 lg:px-56 mb-10 md:mb-28 ${

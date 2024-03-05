@@ -27,12 +27,12 @@ const Skill = () => {
   return (
     <div
       className={`flex flex-col items-center justify-center h-[850px] px-5 ${
-        isDarkMode ? "bg-gray-800 text-white" : "bg-white text-black"
+        isDarkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
       id="skills"
     >
       <h1 className="mb-16 text-5xl font-semibold"> My Skills</h1>
-      <div className="flex flex-wrap justify-center gap-4 mx-0 py-5 md:mx-48 md:py-0 ">
+      <div className="flex flex-wrap justify-center gap-4 mx-0 py-5 md:mx-38 lg:mx-48 md:py-0 ">
         {skills.map((skill, index) => (
           <motion.div
             key={index}

@@ -90,16 +90,16 @@ const ShowCase = ({ products }) => {
 export default ShowCase;
 
 export const Header = () => {
-  const { theme } = useTheme(); // Get the current theme from the useTheme hook
+  const { isDarkMode } = useTheme(); // Get the current theme from the useTheme hook
 
-  const textColor = theme === "light" ? "text-black" : "text-black";
+  const textColor = isDarkMode ? "text-white" : "text-black";
 
   return (
-    <div className="max-w-7xl relative mx-auto px-4 w-full left-10 top-0">
-      <h1 className={`text-2xl md:text-7xl font-bold ${textColor}`}>
+    <div className="max-w-10xl  md:max-w-7xl relative mx-auto px-4 w-full left-10 top-0">
+      <h1 className={`text-5xl md:text-7xl font-bold ${textColor}`}>
         My Journey <br /> in Development
       </h1>
-      <p className={`max-w-2xl text-base md:text-xl mt-8 ${textColor}`}>
+      <p className={`max-w-2xl text-lg md:text-xl mt-8 mr-10 ${textColor}`}>
         From the pride of my first paycheck to the thrill of open-source
         contribution, my journey echoes with innovation. Honored with awards and
         delivering impactful speeches, I weave dedication and creativity into
