@@ -19,7 +19,7 @@ const Hero = ({ imageSrc, altText }) => {
         <motion.img
           src={imageSrc}
           alt={altText}
-          className="w-36 h-36 rounded-full mb-4 border-solid border-8 border-white border-opacity-100"
+          className="w-36 h-36 md:w-48 md:h-48  rounded-full mb-4 border-solid border-8 border-white border-opacity-100"
           whileHover={{ scale: 1.1 }}
         />
 

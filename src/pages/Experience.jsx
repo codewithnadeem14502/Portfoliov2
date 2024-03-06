@@ -70,7 +70,7 @@ const Experience = () => {
             both backend algorithms and frontend interfaces. With a blend of
             technical prowess and user-centric design, I am dedicated to
             ensuring Textr AI stands out as a top choice for SEO optimization.
-            My role involves fine-tuning algorithms for precision and crafting
+            My role involves imporove user interface for precision and crafting
             intuitive interfaces for seamless user experiences. Together, we're
             eliminating guesswork and empowering creators to rank their websites
             at the top with confidence.
@@ -170,14 +170,13 @@ const Experience = () => {
           </div>
 
           <p>
-            Conducted research on machine learning algorithms for natural
-            language processing. Contributed to the development of a sentiment
-            analysis tool for social media data. Presented findings at academic
-            conferences and collaborated with professors on research
-            publications.
-          </p>
-          <p>
-            <em>Academic achievement award recipient</em>
+            Design visually appealing and intuitive web interfaces using HTML,
+            CSS, JavaScript, and React. Collaborate with designers and
+            developers to optimize performance and deliver seamless user
+            experiences. Implement captivating web interfaces with a focus on
+            responsiveness, accessibility, and optimal performance. Drive
+            cross-functional collaboration to exceed expectations and deliver
+            user-centric websites.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

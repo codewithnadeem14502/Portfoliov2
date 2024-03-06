@@ -157,14 +157,14 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
+              <li
+                className="text-lg px-2 py-1 md:text-xl text-white rounded focus:outline-none"
+                onClick={toggleDarkMode}
+              >
+                {isDarkMode ? <IoSunny /> : <IoMoon className="text-black" />}
+              </li>
             </motion.ul>
           </div>
-          <button
-            className="text-lg px-2 py-1 md:text-xl text-white rounded focus:outline-none"
-            onClick={toggleDarkMode}
-          >
-            {isDarkMode ? <IoSunny /> : <IoMoon className="text-black" />}
-          </button>
         </div>
       </nav>
     </div>
