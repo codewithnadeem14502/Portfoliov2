@@ -26,7 +26,7 @@ const Projects = () => {
           className=" w-full"
         >
           <CardBody
-            className={`w-[350px] h-[350px] md:w-[750px] md:h-[350px] flex justify-center items-center text-center rounded-lg ${
+            className={`w-[350px] h-[400px] md:w-[750px] md:h-[400px] flex justify-center items-center text-center rounded-lg ${
               isDarkMode
                 ? "bg-gray-800 hover:bg-gray-700"
                 : "bg-slate-50 hover:bg-slate-100"
@@ -42,22 +42,22 @@ const Projects = () => {
                     className=" "
                   >
                     <img
-                      className="w-[450px] h-[300px] rounded-lg shadow-lg "
+                      className="w-[450px] h-[300px] rounded-lg shadow-lg border"
                       src={project.imageUrl}
                       alt={`Project ${index + 1}`}
                     />
                   </CardItem>
                 </div>
-                <div className="mt-4 px-4 w-full md:w-[50%]">
+                <div className="mt-4 px-4 w-full md:w-[60%]">
                   <div className="flex w-full justify-between items-center text-center">
                     <h1
-                      className={`font-bold text-2xl mb-5  ml-5 ${
+                      className={`font-bold text-2xl mb-5  ml-1 ${
                         isDarkMode ? "text-white" : "text-black"
                       }`}
                     >
                       {project.name}
                     </h1>
-                    <div className="flex justify-evenly items-center w-[40%]">
+                    <div className="flex justify-evenly items-center w-[50%]">
                       <a
                         href={project.githubLink}
                         target="_blank"
@@ -96,8 +96,8 @@ const Projects = () => {
                         key={index}
                         className={`m-2 p-2 rounded-full ${
                           isDarkMode
-                            ? "bg-slate-300 text-black"
-                            : "bg-gray-500 text-white"
+                            ? "bg-white text-black"
+                            : "bg-gray-700 text-white"
                         }`}
                       >
                         {skill}
@@ -173,7 +173,7 @@ const Projects = () => {
                     className=" "
                   >
                     <img
-                      className="w-[450px] h-[300px] rounded-lg "
+                      className="w-[450px] h-[300px] rounded-lg border"
                       src={project.imageUrl}
                       alt={`Project ${index + 1}`}
                     />

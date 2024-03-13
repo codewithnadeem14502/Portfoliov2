@@ -9,13 +9,13 @@ export const products = [
   {
     id: 1,
     title: "",
-    link: "/product-1",
+
     thumbnail: img3,
   },
   {
     id: 2,
     title: "",
-    link: "/product-2",
+
     thumbnail: img6,
   },
   // {

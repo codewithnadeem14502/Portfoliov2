@@ -1,41 +1,57 @@
+import Img1 from "../assets/HolidayBooking.png";
+import Img2 from "../assets/pgmangement.png";
+import Img3 from "../assets/pgmangement.png";
+import Img4 from "../assets/bookpeida.png";
+
 export const projectsData = [
   {
-    name: "Project 1",
+    name: "Holiday",
     description:
-      "Project 1 Description Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    skills: ["React.js", "HTML", "CSS", "React.js", "HTML", "CSS"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1709589865176-7c6ede164354?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8",
+      "Holiday: Transforming travel with seamless booking, advanced search, and secure payments for effortless exploration and peace of mind.      ",
+    skills: [
+      "ReactJs",
+      "NodeJS",
+      "ExpressJS",
+      "Mongodb",
+      "TailwindCSS",
+      "TypeScript",
+      "Stripe",
+    ],
+    imageUrl: Img1,
     githubLink: "https://github.com/example/project1",
     liveSiteLink: "https://example.com/project1",
   },
   {
-    name: "Project 2",
+    name: "PG Mangement",
     description:
       "Project 2 Description Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     skills: ["React.js", "HTML", "CSS", "React.js", "HTML", "CSS"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1709589865176-7c6ede164354?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8",
+    imageUrl: Img2,
     githubLink: "https://github.com/example/project2",
     liveSiteLink: "https://example.com/project2",
   },
   {
-    name: "Project 3",
+    name: "Quillify",
     description:
-      "Project 2 Description Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    skills: ["React.js", "HTML", "CSS", "React.js", "HTML", "CSS"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1709589865176-7c6ede164354?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8",
+    "Where creativity meets functionality! Seamlessly manage content with CRUD operations, enjoy an intuitive text editor, and foster connections with personalized creator names.",
+    skills: [
+      "ReactJs",
+      "NodeJS",
+      "ExpressJS",
+      "Mongodb",
+      "TailwindCSS",
+      "TypeScript",
+    ],
+    imageUrl: Img3,
     githubLink: "https://github.com/example/project2",
     liveSiteLink: "https://example.com/project2",
   },
   {
-    name: "Project 4",
+    name: "Bookpeida",
     description:
-      "Project 2 Description Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    skills: ["React.js", "HTML", "CSS", "React.js", "HTML", "CSS"],
-    imageUrl:
-      "https://images.unsplash.com/photo-1709589865176-7c6ede164354?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8",
+      "Bookpedia merges tech and literature, offering an extensive book collection. With personal libraries and smooth navigation, it's a haven for book lovers with payment Integration.",
+    skills: ["HTML", "CSS", "ReactJs", "TailwindCSS", "Redux", "RazorPay"],
+    imageUrl: Img4,
     githubLink: "https://github.com/example/project2",
     liveSiteLink: "https://example.com/project2",
   },
