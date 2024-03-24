@@ -48,7 +48,7 @@ export const products = [
     thumbnail: img1,
   },
   { id: 6, title: "", link: "/product-5", thumbnail: img2 },
-  { id: 7, title: "Product 4", link: "/product-4", thumbnail: img5 },
+  { id: 7, title: "", link: "/product-4", thumbnail: img5 },
   { id: 8, title: "", link: "/product-4", thumbnail: img6 },
   { id: 9, title: "", link: "/product-5", thumbnail: img1 },
   {

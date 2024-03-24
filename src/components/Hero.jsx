@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaArrowRight } from "react-icons/fa";
 import { useTheme } from "../utils/ThemeContext";
-
+import myResume from "../assets/MohdNadeem.pdf";
 const Hero = ({ imageSrc, altText }) => {
   const { isDarkMode } = useTheme();
 
@@ -49,14 +49,18 @@ const Hero = ({ imageSrc, altText }) => {
             } transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]`}
           >
             Contact me here
-            <FaArrowRight
-              size={24}
-              style={{ marginLeft: "8px", marginTop: "3px" }}
-            />
+            <a href="#contact">
+              <FaArrowRight
+                size={24}
+                style={{ marginLeft: "8px", marginTop: "3px" }}
+              />
+            </a>
           </button>
         </div>
         <div className="min-h-[50px] pr-5 flex items-center justify-center">
-          <button
+          <a
+            href={myResume}
+            download="Mohd_Nadeem_Resume.PDF"
             className={`flex px-10 py-5 font-medium bg-white rounded-lg text-black w-fit text-lg md:text-xl transition-all shadow-[3px_3px_0px_gray] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]`}
           >
             Download resume
@@ -64,8 +68,9 @@ const Hero = ({ imageSrc, altText }) => {
               size={24}
               style={{ marginLeft: "8px", marginTop: "3px" }}
             />
-          </button>
+          </a>
         </div>
+
         <div className="flex items-center justify-center mt-5">
           <motion.div
             whileHover={{ scale: 1.1, color: "black" }}
@@ -74,7 +79,9 @@ const Hero = ({ imageSrc, altText }) => {
               isDarkMode ? "text-gray-400" : "text-gray-800"
             }`}
           >
-            <FaGithub size={24} />
+            <a href="https://github.com/codewithnadeem14502" target="blank">
+              <FaGithub size={24} />
+            </a>
           </motion.div>
 
           <motion.div
@@ -84,7 +91,13 @@ const Hero = ({ imageSrc, altText }) => {
               isDarkMode ? "text-gray-400" : "text-gray-800"
             }`}
           >
-            <FaLinkedin size={24} />
+            {" "}
+            <a
+              href="  https://www.linkedin.com/in/mohd-nadeem-8128311bb/"
+              target="blank"
+            >
+              <FaLinkedin size={24} />
+            </a>
           </motion.div>
         </div>
       </div>

@@ -42,7 +42,7 @@ const Projects = () => {
                     className=" "
                   >
                     <img
-                      className="w-[450px] h-[300px] rounded-lg shadow-lg border"
+                      className="w-[450px] h-[350px] rounded-lg shadow-lg border"
                       src={project.imageUrl}
                       alt={`Project ${index + 1}`}
                     />
@@ -173,7 +173,7 @@ const Projects = () => {
                     className=" "
                   >
                     <img
-                      className="w-[450px] h-[300px] rounded-lg border"
+                      className="w-[450px] h-[350px] rounded-lg border "
                       src={project.imageUrl}
                       alt={`Project ${index + 1}`}
                     />
