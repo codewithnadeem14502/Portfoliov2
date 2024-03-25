@@ -16,7 +16,7 @@ So, as you take a peek at my portfolio, I hope you feel the passion, the dedicat
 - Aceternity-UI for magic 🪄
 
 ## Live Link
-[Check out the live version here!](https://lnkd.in/gfUZhciy)
+[Check out the live version here!](https://portfoliov2-six-orcin.vercel.app/)
 
 Here's to dreaming big, taking risks, and sharing our stories along the way! ✨
 
