@@ -1,6 +1,6 @@
 import Img1 from "../assets/HolidayBooking.png";
 import Img2 from "../assets/pgmangement.png";
-import Img3 from "../assets/pgmangement.png";
+import Img3 from "../assets/blog.png";
 import Img4 from "../assets/bookpeida.png";
 
 export const projectsData = [
