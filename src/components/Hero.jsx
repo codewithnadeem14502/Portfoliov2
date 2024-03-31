@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaArrowRight } from "react-icons/fa";
 import { useTheme } from "../utils/ThemeContext";
-import myResume from "../assets/MohdNadeem.pdf";
+import myResume from "../assets/MohdNadeem_resume.pdf";
 const Hero = ({ imageSrc, altText }) => {
   const { isDarkMode } = useTheme();
 
