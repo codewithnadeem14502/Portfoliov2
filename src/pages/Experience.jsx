@@ -11,6 +11,8 @@ import {
   FaChalkboardTeacher,
   FaGlobe,
 } from "react-icons/fa";
+import { IoPersonSharp } from "react-icons/io5";
+
 import { MdOutlineWeb } from "react-icons/md";
 import { useTheme } from "../utils/ThemeContext";
 
@@ -51,12 +53,48 @@ const Experience = () => {
             fontWeight: "bold",
           }}
           contentArrowStyle={{ borderRight: "20px solid  rgb(226 232 240)" }}
-          date="Feb 2024 - Present"
+          date="Jul 2024 - Present"
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<IoPersonSharp />}
+        >
+          <h3 className="vertical-timeline-element-title  text-xl">
+            Founding Software Developer
+          </h3>
+          <div className="flex  items-center">
+            <HiBuildingOffice2 className="mr-2 text-slate-500" />
+            <h4 className="vertical-timeline-element-subtitle font-semibold">
+              Airia · Full-Time (Remote)
+            </h4>
+          </div>
+
+          <p>
+            Spearheaded developing front-end interfaces for three different
+            applications using JavaScript, Go, and Python, ensuring seamless
+            integration with back-end services and enhancing user engagement by
+            20% through improved interactivity and deploying the applications on
+            Docker and AWS. • Architected and implemented front-end solutions
+            across three applications, focusing on pixel-perfect designs, which
+            streamlined the application process, leading to a resulting in a
+            robust, scalable applications.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work "
+          contentStyle={{
+            background: isDarkMode ? "rgba(255, 255, 255, 0.05)" : "#f3f4f6",
+            border: isDarkMode
+              ? "1px solid rgba(255, 255, 255, 0.05)"
+              : "1px solid rgba(0, 0, 0, 0.05)",
+            color: isDarkMode ? "#fff" : "#000",
+            fontWeight: "bold",
+          }}
+          contentArrowStyle={{ borderRight: "20px solid  rgb(226 232 240)" }}
+          date="Feb 2024 - Jun 2024"
           iconStyle={{ background: "#fff", color: "#000" }}
           icon={<FaGlobe />}
         >
           <h3 className="vertical-timeline-element-title  text-xl">
-            SDE Full Stack Developer
+            Founding SDE Full Stack Developer
           </h3>
           <div className="flex  items-center">
             <HiBuildingOffice2 className="mr-2 text-slate-500" />

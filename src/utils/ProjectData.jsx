@@ -1,10 +1,39 @@
 import Img1 from "../assets/HolidayBooking.png";
 import Img2 from "../assets/pgmangement.png";
-import Img3 from "../assets/blog.png";
+import Img3 from "../assets/cardClash.png";
 import Img4 from "../assets/bookpeida.png";
 
 export const projectsData = [
   {
+    // 1
+    name: "PG Mangement",
+    description:
+      "Featuring dual-layered authentication for admins and users. Implemented real-time updates and advanced search functionalities for efficient tenant management, alongside comprehensive history pages facilitating data-driven decision-making.",
+    skills: ["ReactJs", "TailwindCSS", "NodeJS", "ExpressJS", "Mongodb"],
+    imageUrl: Img2,
+    githubLink: "https://github.com/codewithnadeem14502/pgmanagement",
+    liveSiteLink: "https://pgmanagement-seven.vercel.app/",
+  },
+  {
+    // 2
+    name: "Card Clash",
+    description:
+      "Card Clash brings competitive card-matching to life as two players face off to see who can score the most matches. The player with the best memory and fastest matches wins, making every turn crucial in this ultimate card battle!",
+    skills: [
+      "ReactJs",
+      "Typescript",
+      "TailwindCSS",
+      "Frame-motion",
+      "NodeJS",
+      "ExpressJS",
+      "Mongodb",
+    ],
+    imageUrl: Img3,
+    githubLink: "https://github.com/codewithnadeem14502/MatchGame",
+    liveSiteLink: "https://card-clash-livid.vercel.app/",
+  },
+  {
+    // 3
     name: "Holiday",
     description:
       "Holiday: Transforming travel with seamless booking, advanced search, and secure payments for effortless exploration and peace of mind.      ",
@@ -21,24 +50,7 @@ export const projectsData = [
     githubLink: "https://github.com/codewithnadeem14502/Holiday.com",
     liveSiteLink: "https://hoilday-app.vercel.app/",
   },
-  {
-    name: "PG Mangement",
-    description:
-      "Featuring dual-layered authentication for admins and users. Implemented real-time updates and advanced search functionalities for efficient tenant management, alongside comprehensive history pages facilitating data-driven decision-making.",
-    skills: ["ReactJs", "NodeJS", "ExpressJS", "Mongodb", "TailwindCSS"],
-    imageUrl: Img2,
-    githubLink: "https://github.com/codewithnadeem14502/pgmanagement",
-    liveSiteLink: "https://www.pgmanagement.tech/",
-  },
-  {
-    name: "Quillify",
-    description:
-      "Where creativity meets functionality! Seamlessly manage content with CRUD operations, enjoy an intuitive text editor, and foster connections with personalized creator names.",
-    skills: ["ReactJs", "NodeJS", "ExpressJS", "Mongodb", "TailwindCSS"],
-    imageUrl: Img3,
-    githubLink: "https://github.com/codewithnadeem14502/Blog",
-    liveSiteLink: "https://blog-teal-seven-97.vercel.app/",
-  },
+
   {
     name: "Bookpeida",
     description:

@@ -18,6 +18,8 @@ const skills = [
   "Git",
   "Tailwind",
   "Framer Motion",
+  "Docker",
+  "AWS",
 ];
 
 const Skill = () => {

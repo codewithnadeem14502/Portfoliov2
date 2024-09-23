@@ -4,6 +4,7 @@ import { FaCode } from "react-icons/fa";
 import { FaPager } from "react-icons/fa6";
 import ProjectCard, { CardBody, CardItem } from "./ProjectCard";
 import { projectsData } from "../utils/ProjectData";
+import { SiGithub } from "react-icons/si";
 
 const Projects = () => {
   const { isDarkMode } = useTheme();
@@ -62,11 +63,13 @@ const Projects = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex justify-center items-center bg-slate-500 p-3 md:p-3 rounded-lg text-lg text-white hover:bg-black ${
-                          isDarkMode ? "hover:bg-gray-600" : "hover:bg-gray-300"
+                        className={`flex justify-center items-center bg-slate-500 p-3 md:p-3 rounded-lg text-lg  hover:bg-black ${
+                          isDarkMode
+                            ? "hover:bg-gray-600 text-white"
+                            : "hover:bg-gray-300 text-black"
                         }`}
                       >
-                        <FaCode className="" />
+                        <SiGithub className="" />
                       </a>
                       <a
                         href={project.liveSiteLink}
@@ -74,8 +77,8 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className={`flex justify-center items-center bg-green-400 p-3 md:p-3 rounded-lg text-lg hover:bg-green-500 ${
                           isDarkMode
-                            ? "hover:bg-green-600"
-                            : "hover:bg-green-300"
+                            ? "hover:bg-green-600 "
+                            : "hover:bg-green-300 "
                         }`}
                       >
                         <FaPager className="" />
@@ -84,7 +87,7 @@ const Projects = () => {
                   </div>
 
                   <p
-                    className={`my-5 font-semibold ${
+                    className={`my-5 font-semibold text-start ${
                       isDarkMode ? "text-white" : "text-black"
                     }`}
                   >
@@ -94,7 +97,7 @@ const Projects = () => {
                     {project.skills.map((skill, index) => (
                       <button
                         key={index}
-                        className={`m-2 p-2 rounded-full ${
+                        className={`m-2 p-2 rounded-full text-sm ${
                           isDarkMode
                             ? "bg-white text-black"
                             : "bg-gray-700 text-white"
@@ -122,11 +125,13 @@ const Projects = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex justify-center items-center bg-slate-500 p-3 md:p-3 rounded-lg text-lg text-white hover:bg-black ${
-                          isDarkMode ? "hover:bg-gray-600" : "hover:bg-gray-300"
+                        className={`flex justify-center items-center bg-slate-500 p-3 md:p-3 rounded-lg text-lg  hover:bg-black ${
+                          isDarkMode
+                            ? "hover:bg-gray-600 text-white"
+                            : "hover:bg-gray-300 text-black"
                         }`}
                       >
-                        <FaCode className="" />
+                        <SiGithub className="" />
                       </a>
                       <a
                         href={project.liveSiteLink}
@@ -144,7 +149,7 @@ const Projects = () => {
                   </div>
 
                   <p
-                    className={`my-5 font-semibold ${
+                    className={`my-5 font-semibold text-start ${
                       isDarkMode ? "text-white" : "text-black"
                     }`}
                   >
@@ -154,7 +159,7 @@ const Projects = () => {
                     {project.skills.map((skill, index) => (
                       <button
                         key={index}
-                        className={`m-2 p-2 rounded-full ${
+                        className={`m-2 p-2 rounded-full text-sm ${
                           isDarkMode
                             ? "bg-white text-black"
                             : "bg-gray-700 text-white"
