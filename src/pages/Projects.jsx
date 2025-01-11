@@ -27,7 +27,7 @@ const Projects = () => {
           className=" w-full"
         >
           <CardBody
-            className={`w-[350px] h-[400px] md:w-[750px] md:h-[350px] flex justify-center items-center text-center rounded-lg ${
+            className={`w-[350px] h-[400px] md:w-[750px] md:h-[350px] flex justify-center items-center text-center rounded-lg border border-gray-200 ${
               isDarkMode
                 ? "bg-gray-800 hover:bg-gray-700"
                 : "bg-slate-50 hover:bg-slate-100"
@@ -92,7 +92,7 @@ const Projects = () => {
                   </div>
 
                   <p
-                    className={`mt-3 mb-2 font-semibold text-start ${
+                    className={`mt-1 mb-4 font-semibold text-start ${
                       isDarkMode ? "text-white" : "text-black"
                     }`}
                   >
@@ -162,7 +162,7 @@ const Projects = () => {
                   </div>
 
                   <p
-                    className={`mt-2 font-semibold text-start ${
+                    className={`mt-1 mb-4 font-semibold text-start ${
                       isDarkMode ? "text-white" : "text-black"
                     }`}
                   >

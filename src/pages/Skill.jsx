@@ -57,10 +57,10 @@ const Skill = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={isVisible ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.2, delay: index * 0.1 }}
-            whileHover={{ scale: 1.15 }}
+            transition={{ duration: 0.15, delay: index * 0.05 }}
+            whileHover={{ scale: 1.1, transition: { duration: 0.1 } }}
             className={`rounded-lg px-2 py-2 md:px-4 md:py-4 text-lg md:text-2xl font-light text-center border border-gray-300 shadow-md cursor-pointer ${
               isDarkMode ? "bg-gray-700 text-white" : "bg-white text-black"
             }`}
