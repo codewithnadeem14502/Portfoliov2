@@ -27,7 +27,7 @@ const Projects = () => {
           className=" w-full"
         >
           <CardBody
-            className={`w-[350px] h-[400px] md:w-[750px] md:h-[400px] flex justify-center items-center text-center rounded-lg ${
+            className={`w-[350px] h-[400px] md:w-[750px] md:h-[350px] flex justify-center items-center text-center rounded-lg ${
               isDarkMode
                 ? "bg-gray-800 hover:bg-gray-700"
                 : "bg-slate-50 hover:bg-slate-100"
@@ -43,127 +43,142 @@ const Projects = () => {
                     className=" "
                   >
                     <img
-                      className="w-[450px] h-[350px] rounded-lg shadow-lg border"
+                      className="w-[450px] h-[300px] rounded-lg shadow-lg border"
                       src={project.imageUrl}
                       alt={`Project ${index + 1}`}
                     />
                   </CardItem>
                 </div>
-                <div className="mt-4 px-4 w-full md:w-[60%]">
-                  <div className="flex w-full justify-between items-center text-center">
+                <div className="mt-2 px-2 w-full md:w-[60%] gap-5">
+                  <div className="flex w-full justify-start items-center text-center">
                     <h1
-                      className={`font-bold text-2xl mb-5  ml-1 ${
+                      className={`font-bold text-2xl mb-2  ml-1 text-nowrap ${
                         isDarkMode ? "text-white" : "text-black"
                       }`}
                     >
                       {project.name}
                     </h1>
-                    <div className="flex justify-evenly items-center w-[50%]">
+                    <div className="flex items-start">
                       <a
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex justify-center items-center bg-slate-500 p-3 md:p-3 rounded-lg text-lg  hover:bg-black ${
-                          isDarkMode
-                            ? "hover:bg-gray-600 text-white"
-                            : "hover:bg-gray-300 text-black"
-                        }`}
+                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+          transform hover:scale-110 hover:-translate-y-1
+          ${isDarkMode ? "text-white" : "text-gray-700"}`}
+                        aria-label="View GitHub Repository"
                       >
-                        <SiGithub className="" />
+                        <SiGithub className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
+                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Code
+                        </span>
                       </a>
+
                       <a
                         href={project.liveSiteLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex justify-center items-center bg-green-400 p-3 md:p-3 rounded-lg text-lg hover:bg-green-500 ${
-                          isDarkMode
-                            ? "hover:bg-green-600 "
-                            : "hover:bg-green-300 "
-                        }`}
+                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+          transform hover:scale-110 hover:-translate-y-1
+          ${isDarkMode ? "text-green-400" : "text-green-600"}`}
+                        aria-label="View Live Site"
                       >
-                        <FaPager className="" />
+                        <FaPager className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
+                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Live
+                        </span>
                       </a>
                     </div>
                   </div>
 
                   <p
-                    className={`my-5 font-semibold text-start ${
+                    className={`mt-3 mb-2 font-semibold text-start ${
                       isDarkMode ? "text-white" : "text-black"
                     }`}
                   >
                     {project.description}
                   </p>
                   <div className="w-full">
-                    {project.skills.map((skill, index) => (
-                      <button
-                        key={index}
-                        className={`m-2 p-2 rounded-full text-sm ${
-                          isDarkMode
-                            ? "bg-white text-black"
-                            : "bg-gray-700 text-white"
-                        }`}
-                      >
-                        {skill}
-                      </button>
-                    ))}
+                    <div className="flex flex-wrap gap-3 justify-start">
+                      {project.skills.map((skill, index) => (
+                        <button
+                          key={index}
+                          className={`rounded-lg px-3 py-2 text-lg font-light border border-gray-300 
+              shadow-md hover:shadow-lg transition-all duration-300 whitespace-nowrap
+              ${
+                isDarkMode
+                  ? "text-white hover:bg-gray-700"
+                  : "text-black hover:bg-gray-100"
+              }`}
+                        >
+                          {skill}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </>
             ) : (
               <>
-                <div className="mt-4 px-4 w-full md:w-[50%]">
-                  <div className="flex w-full justify-between items-center text-center">
+                <div className="mt-2 px-3 w-full md:w-[60%]">
+                  <div className="flex w-full gap-5 justify-start items-center text-center">
                     <h1
-                      className={`font-bold text-2xl mb-5  ml-5 ${
+                      className={`font-bold text-2xl mb-1  ml-5 ${
                         isDarkMode ? "text-white" : "text-black"
                       }`}
                     >
                       {project.name}
                     </h1>
-                    <div className="flex justify-evenly items-center w-[40%]">
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`flex justify-center items-center bg-slate-500 p-3 md:p-3 rounded-lg text-lg  hover:bg-black ${
-                          isDarkMode
-                            ? "hover:bg-gray-600 text-white"
-                            : "hover:bg-gray-300 text-black"
-                        }`}
-                      >
-                        <SiGithub className="" />
-                      </a>
+                    <div className="flex justify-start items-center w-[40%]">
                       <a
                         href={project.liveSiteLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex justify-center items-center bg-green-400 p-3 md:p-3 rounded-lg text-lg hover:bg-green-500 ${
-                          isDarkMode
-                            ? "hover:bg-green-600"
-                            : "hover:bg-green-300"
-                        }`}
+                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+          transform hover:scale-110 hover:-translate-y-1
+          ${isDarkMode ? "text-green-400" : "text-green-600"}`}
+                        aria-label="View Live Site"
                       >
-                        <FaPager className="" />
+                        <FaPager className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
+                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Live
+                        </span>
+                      </a>
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+          transform hover:scale-110 hover:-translate-y-1
+          ${isDarkMode ? "text-white" : "text-gray-700"}`}
+                        aria-label="View GitHub Repository"
+                      >
+                        <SiGithub className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
+                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Code
+                        </span>
                       </a>
                     </div>
                   </div>
 
                   <p
-                    className={`my-5 font-semibold text-start ${
+                    className={`mt-2 font-semibold text-start ${
                       isDarkMode ? "text-white" : "text-black"
                     }`}
                   >
                     {project.description}
                   </p>
-                  <div className="w-full">
+                  <div className="flex flex-wrap gap-3 justify-start">
                     {project.skills.map((skill, index) => (
                       <button
                         key={index}
-                        className={`m-2 p-2 rounded-full text-sm ${
-                          isDarkMode
-                            ? "bg-white text-black"
-                            : "bg-gray-700 text-white"
-                        }`}
+                        className={`rounded-lg px-3 py-2 text-lg font-light border border-gray-300 
+              shadow-md hover:shadow-lg transition-all duration-300 whitespace-nowrap
+              ${
+                isDarkMode
+                  ? "text-white hover:bg-gray-700"
+                  : "text-black hover:bg-gray-100"
+              }`}
                       >
                         {skill}
                       </button>
@@ -178,7 +193,7 @@ const Projects = () => {
                     className=" "
                   >
                     <img
-                      className="w-[450px] h-[350px] rounded-lg border "
+                      className="w-[450px] h-[300px] rounded-lg shadow-lg border"
                       src={project.imageUrl}
                       alt={`Project ${index + 1}`}
                     />
