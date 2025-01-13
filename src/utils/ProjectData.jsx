@@ -18,7 +18,7 @@ export const projectsData = [
     // 2
     name: "Card Clash",
     description:
-      "Card-matching to life as two players face off matches. With an engaging web-based platform, enjoy smooth gameplay enhanced by a visually appealing UI. Key features include tracking wrong moves to add a strategic twist and unique card designs to keep the gameplay exciting.",
+      "Card-matching to life as two players face off matches, enjoy smooth gameplay enhanced by a visually appealing UI. Key features include tracking wrong moves to add a strategic twist and unique card designs.",
     skills: [
       "ReactJs",
       "Typescript",

@@ -52,7 +52,7 @@ const Projects = () => {
                 <div className="mt-2 px-2 w-full md:w-[60%] gap-5">
                   <div className="flex w-full justify-start items-center text-center">
                     <h1
-                      className={`font-bold text-2xl mb-2  ml-1 text-nowrap ${
+                      className={`font-bold text-2xl mb-2  ml-1 text-center mt-2 text-nowrap ${
                         isDarkMode ? "text-white" : "text-black"
                       }`}
                     >
@@ -120,30 +120,16 @@ const Projects = () => {
               </>
             ) : (
               <>
-                <div className="mt-2 px-3 w-full md:w-[60%]">
-                  <div className="flex w-full gap-5 justify-start items-center text-center">
+                <div className="mt-2 px-4 w-full md:w-[60%]">
+                  <div className="flex w-full gap-5 justify-start items-start text-center">
                     <h1
-                      className={`font-bold text-2xl mb-1  ml-5 ${
+                      className={`font-bold text-2xl mb-2 ${
                         isDarkMode ? "text-white" : "text-black"
                       }`}
                     >
                       {project.name}
                     </h1>
                     <div className="flex justify-start items-center w-[40%]">
-                      <a
-                        href={project.liveSiteLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
-          transform hover:scale-110 hover:-translate-y-1
-          ${isDarkMode ? "text-green-400" : "text-green-600"}`}
-                        aria-label="View Live Site"
-                      >
-                        <FaPager className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
-                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          Live
-                        </span>
-                      </a>
                       <a
                         href={project.githubLink}
                         target="_blank"
@@ -156,6 +142,20 @@ const Projects = () => {
                         <SiGithub className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
                         <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           Code
+                        </span>
+                      </a>
+                      <a
+                        href={project.liveSiteLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+          transform hover:scale-110 hover:-translate-y-1
+          ${isDarkMode ? "text-green-400" : "text-green-600"}`}
+                        aria-label="View Live Site"
+                      >
+                        <FaPager className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
+                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          Live
                         </span>
                       </a>
                     </div>
