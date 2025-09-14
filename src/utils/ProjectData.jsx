@@ -4,9 +4,27 @@ import Img3 from "../assets/cardClash.png";
 import Img4 from "../assets/bookpeida.png";
 import Img5 from "../assets/NexiumTracker.png";
 export const projectsData = [
+  // 1
   {
-    // 1
-    name: "PG Mangement",
+    name: "Holiday",
+    description:
+      "Transforming travel with seamless booking, advanced search, and secure payments for effortless exploration and peace of mind.",
+    skills: [
+      "TypeScript",
+      "ReactJs",
+      "NodeJS",
+      "ExpressJS",
+      "Mongodb",
+      // "TailwindCSS",
+      "Stripe",
+    ],
+    imageUrl: Img1,
+    githubLink: "https://github.com/codewithnadeem14502/Holiday.com",
+    liveSiteLink: "https://hoilday-app.vercel.app/",
+  },
+  // 2
+  {
+    name: "PG Management",
     description:
       "Featuring dual-layered authentication for admins and users. Implemented real-time updates and advanced search functionalities for efficient tenant management,with  history page",
     skills: ["ReactJs", "TailwindCSS", "NodeJS", "ExpressJS", "Mongodb"],
@@ -14,16 +32,16 @@ export const projectsData = [
     githubLink: "https://github.com/codewithnadeem14502/pgmanagement",
     liveSiteLink: "https://pgmanagement-seven.vercel.app/",
   },
+  // 3
   {
-    // 2
     name: "Card Clash",
     description:
-      "Card-matching to life as two players face off matches, enjoy smooth gameplay enhanced by a visually appealing UI. Key features include tracking wrong moves to add a strategic twist and unique card designs.",
+      "Two players face off in a smooth card-matching game with a visually appealing UI, wrong-move tracking for a strategic twist, and unique card designs.",
     skills: [
       "ReactJs",
       "Typescript",
       "NodeJS",
-      "ExpressJS",
+      // "ExpressJS",
       "Mongodb",
       "Frame-motion",
     ],
@@ -33,16 +51,6 @@ export const projectsData = [
   },
   // 4
   {
-    name: "Nexium Tracker",
-    description:
-      "A scalable inventory management system, with SOLID principles & maintainable backend architecture. Integrated features like order processing, user management, and advanced validation for data integrity.",
-    skills: ["ReactJs", "ExpressJs", "MongoDB", "TailwindCSS", "RazorPay"],
-    imageUrl: Img5,
-    githubLink: "https://github.com/codewithnadeem14502/NexiumTracker",
-    liveSiteLink: "https://nexium-tracker.vercel.app/",
-  },
-  // 5
-  {
     name: "Bookpeida",
     description:
       "Bookpedia merges tech and literature, offering an extensive book collection. With personal libraries and smooth navigation, it's a haven for book lovers with payment Integration.",
@@ -51,24 +59,15 @@ export const projectsData = [
     githubLink: "https://github.com/codewithnadeem14502/Bookpedia",
     liveSiteLink: "https://bookpedia-bay.vercel.app/",
   },
+  // 5
   {
-    // 6
-    name: "Holiday",
+    name: "Nexium Tracker",
     description:
-      "Holiday: Transforming travel with seamless booking, advanced search, and secure payments for effortless exploration and peace of mind.      ",
-    skills: [
-      "ReactJs",
-      "NodeJS",
-      "ExpressJS",
-      "Mongodb",
-      "TailwindCSS",
-      "TypeScript",
-      "Stripe",
-    ],
-    imageUrl: Img1,
-    githubLink: "https://github.com/codewithnadeem14502/Holiday.com",
-    liveSiteLink: "https://hoilday-app.vercel.app/",
+      "A scalable inventory management system, with SOLID principles & maintainable backend architecture. Integrated features like order processing, user management, and advanced validation for data integrity.",
+    skills: ["ReactJs", "ExpressJs", "MongoDB", "TailwindCSS", "RazorPay"],
+    imageUrl: Img5,
+    githubLink: "https://github.com/codewithnadeem14502/NexiumTracker",
+    liveSiteLink: "https://nexium-tracker.vercel.app/",
   },
-
   // Add more project objects as needed
 ];

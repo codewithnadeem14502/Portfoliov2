@@ -5,15 +5,10 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { HiBuildingOffice2 } from "react-icons/hi2";
-import {
-  FaBriefcase,
-  FaUserGraduate,
-  FaChalkboardTeacher,
-  FaGlobe,
-} from "react-icons/fa";
+import { FaBriefcase, FaChalkboardTeacher, FaGlobe } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
-
-import { MdOutlineWeb } from "react-icons/md";
+import { LuConstruction } from "react-icons/lu";
+import { MdCastForEducation } from "react-icons/md";
 import { useTheme } from "../utils/ThemeContext";
 
 const Experience = () => {
@@ -52,8 +47,44 @@ const Experience = () => {
             color: isDarkMode ? "#fff" : "#000",
             fontWeight: "bold",
           }}
+          date="Feb 2025 - Present"
           contentArrowStyle={{ borderRight: "20px solid  rgb(226 232 240)" }}
-          date="Jul 2024 - Present"
+          iconStyle={{ background: "#fff", color: "#000" }}
+          icon={<LuConstruction />}
+        >
+          <h3 className="vertical-timeline-element-title  text-xl">
+            Product Developer
+          </h3>
+          <div className="flex  items-center">
+            <HiBuildingOffice2 className="mr-2 text-slate-500" />
+            <h4 className="vertical-timeline-element-subtitle font-semibold">
+              Inncircles · Full-Time (onsite - HYD)
+            </h4>
+          </div>
+
+          <p>
+            At Inncircles, I work as a Product Developer, building scalable
+            features across web and mobile. I implemented real-time alerting
+            with AWS CloudWatch and Slack, reducing issue response time by 60%,
+            and enhanced the lead lifecycle with post-engagement tracking and
+            smart filtering. I also upgraded the payment module to support
+            multi-transaction flows and optimized queries on 800K+ records,
+            achieving 3x faster performance, while improving authentication with
+            secure multi-session support across platforms.{" "}
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work "
+          contentStyle={{
+            background: isDarkMode ? "rgba(255, 255, 255, 0.05)" : "#f3f4f6",
+            border: isDarkMode
+              ? "1px solid rgba(255, 255, 255, 0.05)"
+              : "1px solid rgba(0, 0, 0, 0.05)",
+            color: isDarkMode ? "#fff" : "#000",
+            fontWeight: "bold",
+          }}
+          contentArrowStyle={{ borderRight: "20px solid  rgb(226 232 240)" }}
+          date="Jul 2024 - Feb 2025"
           iconStyle={{ background: "#fff", color: "#000" }}
           icon={<IoPersonSharp />}
         >
@@ -78,6 +109,7 @@ const Experience = () => {
             robust, scalable applications.
           </p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work "
           contentStyle={{
@@ -128,7 +160,7 @@ const Experience = () => {
           contentArrowStyle={{ borderRight: "20px solid  rgb(226 232 240)" }}
           date="Jan 2024 - Feb 2024"
           iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<FaBriefcase />}
+          icon={<MdCastForEducation />}
         >
           <h3 className="vertical-timeline-element-title text-xl">
             Software Developer
@@ -195,7 +227,7 @@ const Experience = () => {
           contentArrowStyle={{ borderRight: "20px solid  rgb(226 232 240)" }}
           date="Jan 2023 - Mar 2023"
           iconStyle={{ background: "#fff", color: "#000" }}
-          icon={<MdOutlineWeb />}
+          icon={<FaBriefcase />}
         >
           <h3 className="vertical-timeline-element-title text-xl">
             Frontend Developer
