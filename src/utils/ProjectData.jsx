@@ -24,13 +24,13 @@ export const projectsData = [
   },
   // 2
   {
-    name: "PG Management",
+    name: "Bookpeida",
     description:
-      "Featuring dual-layered authentication for admins and users. Implemented real-time updates and advanced search functionalities for efficient tenant management,with  history page",
-    skills: ["ReactJs", "TailwindCSS", "NodeJS", "ExpressJS", "Mongodb"],
-    imageUrl: Img2,
-    githubLink: "https://github.com/codewithnadeem14502/pgmanagement",
-    liveSiteLink: "https://pgmanagement-seven.vercel.app/",
+      "Bookpedia merges tech and literature, offering an extensive book collection. With personal libraries and smooth navigation, it's a haven for book lovers with payment Integration.",
+    skills: ["HTML", "CSS", "ReactJs", "TailwindCSS", "Redux", "RazorPay"],
+    imageUrl: Img4,
+    githubLink: "https://github.com/codewithnadeem14502/Bookpedia",
+    liveSiteLink: "https://bookpedia-bay.vercel.app/",
   },
   // 3
   {
@@ -51,13 +51,13 @@ export const projectsData = [
   },
   // 4
   {
-    name: "Bookpeida",
+    name: "PG Mate",
     description:
-      "Bookpedia merges tech and literature, offering an extensive book collection. With personal libraries and smooth navigation, it's a haven for book lovers with payment Integration.",
-    skills: ["HTML", "CSS", "ReactJs", "TailwindCSS", "Redux", "RazorPay"],
-    imageUrl: Img4,
-    githubLink: "https://github.com/codewithnadeem14502/Bookpedia",
-    liveSiteLink: "https://bookpedia-bay.vercel.app/",
+      "Featuring dual-layered authentication for admins and users. Implemented real-time updates and advanced search functionalities for efficient tenant management,with  history page",
+    skills: ["ReactJs", "TailwindCSS", "NodeJS", "ExpressJS", "Mongodb"],
+    imageUrl: Img2,
+    githubLink: "https://github.com/codewithnadeem14502/pgmanagement",
+    liveSiteLink: "https://pgmanagement-seven.vercel.app/",
   },
   // 5
   {

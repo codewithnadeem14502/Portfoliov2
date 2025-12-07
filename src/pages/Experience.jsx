@@ -47,7 +47,7 @@ const Experience = () => {
             color: isDarkMode ? "#fff" : "#000",
             fontWeight: "bold",
           }}
-          date="Feb 2025 - Present"
+          date="Jun 2025 - Present"
           contentArrowStyle={{ borderRight: "20px solid  rgb(226 232 240)" }}
           iconStyle={{ background: "#fff", color: "#000" }}
           icon={<LuConstruction />}
@@ -84,7 +84,7 @@ const Experience = () => {
             fontWeight: "bold",
           }}
           contentArrowStyle={{ borderRight: "20px solid  rgb(226 232 240)" }}
-          date="Jul 2024 - Feb 2025"
+          date="Jul 2024 - Jun 2025"
           iconStyle={{ background: "#fff", color: "#000" }}
           icon={<IoPersonSharp />}
         >
