@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "../utils/ThemeContext";
-import { FaCode } from "react-icons/fa";
+import { FaVideo } from "react-icons/fa";
 import { FaPager } from "react-icons/fa6";
 import ProjectCard, { CardBody, CardItem } from "./ProjectCard";
 import { projectsData } from "../utils/ProjectData";
@@ -50,7 +50,7 @@ const Projects = () => {
                   </CardItem>
                 </div>
                 <div className="mt-2 px-2 w-full md:w-[60%] gap-5">
-                  <div className="flex w-full justify-start items-center text-center">
+                  <div className="flex w-full justify-start items-center gap-3 text-center">
                     <h1
                       className={`font-bold text-2xl mb-2  ml-1 text-center mt-2 text-nowrap ${
                         isDarkMode ? "text-white" : "text-black"
@@ -58,36 +58,56 @@ const Projects = () => {
                     >
                       {project.name}
                     </h1>
-                    <div className="flex items-start">
+                    <div className="flex items-center gap-1">
                       <a
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+                        className={`group flex items-center p-2 rounded-lg transition-all duration-300
           transform hover:scale-110 hover:-translate-y-1
           ${isDarkMode ? "text-white" : "text-gray-700"}`}
                         aria-label="View GitHub Repository"
+                        title="GitHub"
                       >
                         <SiGithub className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
-                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          Code
-                        </span>
                       </a>
 
                       <a
                         href={project.liveSiteLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+                        className={`group flex items-center p-2 rounded-lg transition-all duration-300
           transform hover:scale-110 hover:-translate-y-1
           ${isDarkMode ? "text-green-400" : "text-green-600"}`}
                         aria-label="View Live Site"
+                        title="Live site"
                       >
                         <FaPager className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
-                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          Live
-                        </span>
                       </a>
+                      {project.videoLink ? (
+                        <a
+                          href={project.videoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`group flex items-center p-2 rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 ${
+                            isDarkMode ? "text-red-400" : "text-red-600"
+                          }`}
+                          aria-label="Watch project video"
+                          title="Video"
+                        >
+                          <FaVideo className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
+                        </a>
+                      ) : (
+                        <span
+                          className={`flex items-center p-2 opacity-40 ${
+                            isDarkMode ? "text-red-400" : "text-red-600"
+                          }`}
+                          aria-label="Project video link not available"
+                          title="Video link not available"
+                        >
+                          <FaVideo className="text-2xl" />
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -121,7 +141,7 @@ const Projects = () => {
             ) : (
               <>
                 <div className="mt-2 px-4 w-full md:w-[60%]">
-                  <div className="flex w-full gap-5 justify-start items-start text-center">
+                  <div className="flex w-full gap-3 justify-start items-center text-center">
                     <h1
                       className={`font-bold text-2xl mb-2 ${
                         isDarkMode ? "text-white" : "text-black"
@@ -129,35 +149,55 @@ const Projects = () => {
                     >
                       {project.name}
                     </h1>
-                    <div className="flex justify-start items-center w-[40%]">
+                    <div className="flex justify-start items-center gap-1">
                       <a
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+                        className={`group flex items-center p-2 rounded-lg transition-all duration-300
           transform hover:scale-110 hover:-translate-y-1
           ${isDarkMode ? "text-white" : "text-gray-700"}`}
                         aria-label="View GitHub Repository"
+                        title="GitHub"
                       >
                         <SiGithub className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
-                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          Code
-                        </span>
                       </a>
                       <a
                         href={project.liveSiteLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group flex items-center gap-2 p-2 rounded-lg transition-all duration-300
+                        className={`group flex items-center p-2 rounded-lg transition-all duration-300
           transform hover:scale-110 hover:-translate-y-1
           ${isDarkMode ? "text-green-400" : "text-green-600"}`}
                         aria-label="View Live Site"
+                        title="Live site"
                       >
                         <FaPager className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
-                        <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          Live
-                        </span>
                       </a>
+                      {project.videoLink ? (
+                        <a
+                          href={project.videoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`group flex items-center p-2 rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 ${
+                            isDarkMode ? "text-red-400" : "text-red-600"
+                          }`}
+                          aria-label="Watch project video"
+                          title="Video"
+                        >
+                          <FaVideo className="text-2xl transition-transform duration-300 group-hover:rotate-12" />
+                        </a>
+                      ) : (
+                        <span
+                          className={`flex items-center p-2 opacity-40 ${
+                            isDarkMode ? "text-red-400" : "text-red-600"
+                          }`}
+                          aria-label="Project video link not available"
+                          title="Video link not available"
+                        >
+                          <FaVideo className="text-2xl" />
+                        </span>
+                      )}
                     </div>
                   </div>
 
